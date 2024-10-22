@@ -1,1 +1,329 @@
-/* место для вашего кода */
+/* ШАПКА САЙТА */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1052px;
+  height: 105px;
+  margin: 92px 24px;
+}
+
+.menu {
+  flex: 1;
+  margin-left: 26.52px;
+  padding: 0;
+}
+
+.menu_list {
+  display: flex;
+  justify-content: space-between;
+  width: 391.48px;
+  font-size: 18px;
+  list-style-type: circle;
+}
+
+.menu_list li:first-child {
+  list-style-type: none;
+}
+
+.menu_item_home {
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  flex: 0;
+  justify-content: center;
+}
+
+.logo_image {
+  left: 454px;
+  width: 148px;
+  height: 105px;
+}
+
+.contacts {
+  flex: 1;
+  max-width: 240.52px;
+  height: 98px;
+  margin-right: 25.48px;
+  margin-left: 184px;
+  font-size: 18px;
+  line-height: 24.3px;
+  text-align: left;
+}
+
+.phone_number {
+  text-decoration: underline;
+}
+
+.email {
+  text-decoration: underline;
+}
+
+/* ПЕРВАЯ СЕКЦИЯ */
+
+.cover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  width: 1100px;
+  height: 757px;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.cover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.tesis {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  height: 355px;
+  margin: 165px 50px 150px 50px;
+  color: #fff;
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 100px;
+  letter-spacing: 21px;
+}
+
+.left_word {
+  align-self: start;
+}
+
+.center_word {
+  align-self: center;
+  margin-left: -35px;
+}
+
+.right_word {
+  align-self: end;
+}
+
+.subline {
+  z-index: 2;
+  max-width: 637px;
+  margin: 0 78px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 22px;
+  text-transform: uppercase;
+  word-spacing: 18px;
+}
+
+.button {
+  z-index: 2;
+  align-self: end;
+  max-width: 256px;
+  margin: -42px 50px 51px 0;
+  border: 1px solid #fff;
+  padding: 12px 32px 11px 31px;
+  color: #fff;
+  font-weight: normal;
+  font-size: 22px;
+  text-transform: uppercase;
+  background: none;
+}
+
+/* ВТОРАЯ СЕКЦИЯ */
+
+.lots {
+  position: relative;
+  width: 1052px;
+  height: 692px;
+  margin: 179px 24px 0 24px;
+}
+
+.header_lots {
+  margin: 0 0 27px 40px;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 334px;
+  height: 563px;
+  padding: 51px 40px 48px 40px;
+}
+
+.card_film {
+  position: relative;
+  background-image: url(../images/card-lot-01.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.card_film::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.card_book {
+  position: relative;
+  background-image: url(../images/card-lot-02.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.card_book::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.card_picture {
+  position: relative;
+  background-image: url(../images/card-lot-03.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.card_picture::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.lots_name {
+  z-index: 2;
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26.4px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.lots_text {
+  z-index: 2;
+  color: #fff;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.look_more {
+  position: absolute;
+  bottom: 0;
+  margin-left: 40px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23.48px;
+}
+
+/* ТРЕТЬЯ СЕКЦИЯ */
+
+.about {
+  display: flex;
+  width: 1052px;
+  height: 595px;
+  margin: 146px 24px 180px 24px;
+}
+
+.ring_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  margin-top: 35px;
+  margin-left: 47px;
+  border-radius: 120px;
+  background-color: #000;
+}
+
+.white_logo {
+  width: 148px;
+  height: 114px;
+}
+
+.about_main {
+  justify-items: stretch;
+  align-self: flex-end;
+  width: 693px;
+  height: 449px;
+  margin-top: 133px;
+  margin-left: auto;
+}
+
+.header_about {
+  margin-bottom: 76px;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.about_text {
+  margin-top: 24px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/* ПОДВАЛ САЙТА */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 50px 88px 50px;
+}
+
+.footer_contacts {
+  margin: 0;
+}
+
+.footer_menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.social_media {
+  display: flex;
+  justify-content: space-between;
+  width: 240.52px;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+}
