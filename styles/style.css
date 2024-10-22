@@ -56,10 +56,12 @@
 
 .phone_number {
   text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 .email {
   text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 /* ПЕРВАЯ СЕКЦИЯ */
@@ -244,6 +246,7 @@
 
 .look_more {
   position: absolute;
+  text-underline-offset: 3px;
   bottom: 0;
   margin-left: 40px;
   font-weight: 400;
