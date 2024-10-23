@@ -5,7 +5,6 @@
   justify-content: space-between;
   align-items: center;
   width: 1052px;
-  height: 105px;
   margin: 92px 24px;
 }
 
@@ -27,7 +26,7 @@
   list-style-type: none;
 }
 
-.menu_item_home {
+.menu_item_active {
   text-decoration: none;
 }
 
@@ -38,7 +37,6 @@
 }
 
 .logo_image {
-  left: 454px;
   width: 148px;
   height: 105px;
 }
@@ -46,7 +44,6 @@
 .contacts {
   flex: 1;
   max-width: 240.52px;
-  height: 98px;
   margin-right: 25.48px;
   margin-left: 184px;
   font-size: 18px;
@@ -54,12 +51,7 @@
   text-align: left;
 }
 
-.phone_number {
-  text-decoration: underline;
-  text-underline-offset: 5px;
-}
-
-.email {
+.contacs_info {
   text-decoration: underline;
   text-underline-offset: 5px;
 }
@@ -71,7 +63,7 @@
   display: flex;
   flex-direction: column;
   justify-content: right;
-  width: 1100px;
+  max-width: 1100px;
   height: 757px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
@@ -96,13 +88,13 @@
   display: flex;
   flex-direction: column;
   width: 1000px;
-  height: 355px;
-  margin: 165px 50px 150px 50px;
+  margin: 165px 50px 147px 50px;
   color: #fff;
   font-family: Raleway, sans-serif;
   font-weight: bold;
   font-size: 100px;
-  letter-spacing: 21px;
+  letter-spacing: 30px;
+  text-transform: uppercase;
 }
 
 .left_word {
@@ -111,15 +103,28 @@
 
 .center_word {
   align-self: center;
-  margin-left: -35px;
 }
 
 .right_word {
   align-self: end;
 }
 
+.lost_letter {
+  letter-spacing: normal;
+}
+
+.max_space {
+  letter-spacing: 60px;
+}
+
+.bottom_of_section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .subline {
   z-index: 2;
+  align-self: center;
   max-width: 637px;
   margin: 0 78px;
   color: #fff;
@@ -131,12 +136,13 @@
 
 .button {
   z-index: 2;
-  align-self: end;
+  align-self: self-end;
   max-width: 256px;
-  margin: -42px 50px 51px 0;
-  border: 1px solid #fff;
+  margin: auto auto auto 0;
+  border: 1px solid currentColor;
   padding: 12px 32px 11px 31px;
   color: #fff;
+  font-family: Raleway, sans-serif;
   font-weight: normal;
   font-size: 22px;
   text-transform: uppercase;
@@ -148,8 +154,8 @@
 .lots {
   position: relative;
   width: 1052px;
-  height: 692px;
-  margin: 179px 24px 0 24px;
+  min-height: 692px;
+  margin: 179px 24px 30px 24px;
 }
 
 .header_lots {
@@ -162,22 +168,25 @@
 .cards {
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 334px;
-  height: 563px;
+  min-height: 563px;
   padding: 51px 40px 48px 40px;
+  background-position: center;
+  background-size: cover;
 }
 
 .card_film {
-  position: relative;
   background-image: url(../images/card-lot-01.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .card_film::before {
@@ -192,10 +201,7 @@
 }
 
 .card_book {
-  position: relative;
   background-image: url(../images/card-lot-02.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .card_book::before {
@@ -210,10 +216,7 @@
 }
 
 .card_picture {
-  position: relative;
   background-image: url(../images/card-lot-03.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .card_picture::before {
@@ -245,13 +248,13 @@
 }
 
 .look_more {
-  position: absolute;
-  text-underline-offset: 3px;
-  bottom: 0;
-  margin-left: 40px;
+  position: relative;
+  top: 30px;
+  left: 40px;
   font-weight: 400;
   font-size: 20px;
   line-height: 23.48px;
+  text-underline-offset: 3px;
 }
 
 /* ТРЕТЬЯ СЕКЦИЯ */
@@ -259,7 +262,6 @@
 .about {
   display: flex;
   width: 1052px;
-  height: 595px;
   margin: 146px 24px 180px 24px;
 }
 
@@ -271,7 +273,7 @@
   height: 240px;
   margin-top: 35px;
   margin-left: 47px;
-  border-radius: 120px;
+  border-radius: 50%;
   background-color: #000;
 }
 
@@ -284,7 +286,6 @@
   justify-items: stretch;
   align-self: flex-end;
   width: 693px;
-  height: 449px;
   margin-top: 133px;
   margin-left: auto;
 }
@@ -324,6 +325,9 @@
   display: flex;
   justify-content: space-between;
   width: 240.52px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .icon {
